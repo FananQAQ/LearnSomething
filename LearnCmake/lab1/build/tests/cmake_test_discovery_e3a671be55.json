@@ -1,0 +1,27 @@
+{
+  "tests": 3,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "MathUtilsTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "Add",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab1\\tests\\test_math.cpp",
+          "line": 4
+        },
+        {
+          "name": "Multiply",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab1\\tests\\test_math.cpp",
+          "line": 8
+        },
+        {
+          "name": "Subtract",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab1\\tests\\test_math.cpp",
+          "line": 12
+        }
+      ]
+    }
+  ]
+}

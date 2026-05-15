@@ -1,0 +1,5 @@
+if(EXISTS "D:/LearnSomething/LearnCmake/lab1/build/tests/test_math[1]_tests.cmake")
+  include("D:/LearnSomething/LearnCmake/lab1/build/tests/test_math[1]_tests.cmake")
+else()
+  add_test(test_math_NOT_BUILT test_math_NOT_BUILT)
+endif()

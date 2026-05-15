@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/LearnSomething/LearnCmake/lab1/build/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/lib/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/src/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/tests/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/_deps/googletest-build/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"D:/LearnSomething/LearnCmake/lab1/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,7 @@
+add_test([=[MathUtilsTest.Add]=]  D:/LearnSomething/LearnCmake/lab1/build/tests/Debug/test_math.exe [==[--gtest_filter=MathUtilsTest.Add]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MathUtilsTest.Add]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab1\tests\test_math.cpp:4]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab1/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MathUtilsTest.Multiply]=]  D:/LearnSomething/LearnCmake/lab1/build/tests/Debug/test_math.exe [==[--gtest_filter=MathUtilsTest.Multiply]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MathUtilsTest.Multiply]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab1\tests\test_math.cpp:8]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab1/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MathUtilsTest.Subtract]=]  D:/LearnSomething/LearnCmake/lab1/build/tests/Debug/test_math.exe [==[--gtest_filter=MathUtilsTest.Subtract]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MathUtilsTest.Subtract]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab1\tests\test_math.cpp:12]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab1/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_math_TESTS MathUtilsTest.Add MathUtilsTest.Multiply MathUtilsTest.Subtract)

@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: D:/LearnSomething/LearnCmake/lab2/lib/stats
+# Build directory: D:/LearnSomething/LearnCmake/lab2/build/lib/stats
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
