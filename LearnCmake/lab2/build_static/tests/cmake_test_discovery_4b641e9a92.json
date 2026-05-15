@@ -1,0 +1,22 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "StringUtilsTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "Trim",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab2\\tests\\test_string.cpp",
+          "line": 5
+        },
+        {
+          "name": "SplitAndCount",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab2\\tests\\test_string.cpp",
+          "line": 9
+        }
+      ]
+    }
+  ]
+}

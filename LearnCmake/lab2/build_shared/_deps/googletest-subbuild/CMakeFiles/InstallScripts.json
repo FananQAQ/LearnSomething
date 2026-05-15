@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/LearnSomething/LearnCmake/lab2/build_shared/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

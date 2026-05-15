@@ -1,0 +1,10 @@
+^D:\LEARNSOMETHING\LEARNCMAKE\LAB2\LIB\CORE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LearnSomething/LearnCmake/lab2 -BD:/LearnSomething/LearnCmake/lab2/build_shared --check-stamp-file D:/LearnSomething/LearnCmake/lab2/build_shared/lib/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -2,6 +2,7 @@
 
 #include <cctype>
 #include <sstream>
+#include <algorithm>
 
 namespace {
 
@@ -38,6 +39,12 @@ std::vector<std::string> split(const std::string& text, char delimiter) {
     }
 
     return parts;
+}
+
+std::string to_upper(const std::string& text) {
+    std::string result = text;
+    std::transform(result.begin(), result.end(), result.begin(), ::toupper);
+    return result;
 }
 
 std::size_t count_words(const std::string& text, char delimiter) {

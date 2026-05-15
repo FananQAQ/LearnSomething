@@ -1,0 +1,5 @@
+add_test([=[StatsTest.Summarize]=]  D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_stats.exe [==[--gtest_filter=StatsTest.Summarize]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StatsTest.Summarize]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab2\tests\test_stats.cpp:5]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab2/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[StatsTest.EmptyInput]=]  D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_stats.exe [==[--gtest_filter=StatsTest.EmptyInput]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StatsTest.EmptyInput]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab2\tests\test_stats.cpp:12]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab2/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_stats_TESTS StatsTest.Summarize StatsTest.EmptyInput)

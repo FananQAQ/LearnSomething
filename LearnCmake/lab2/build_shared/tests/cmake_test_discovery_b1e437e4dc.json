@@ -1,0 +1,22 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "StatsTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "Summarize",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab2\\tests\\test_stats.cpp",
+          "line": 5
+        },
+        {
+          "name": "EmptyInput",
+          "file": "D:\\LearnSomething\\LearnCmake\\lab2\\tests\\test_stats.cpp",
+          "line": 12
+        }
+      ]
+    }
+  ]
+}

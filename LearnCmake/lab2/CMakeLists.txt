@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(lab2_cmake
-    VERSION 1.0.0
+    VERSION 1.1.0
     DESCRIPTION "CMake advanced lab: multi-target, install, export"
     LANGUAGES CXX
 )
@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-option(LAB2_ENABLE_VERBOSE "Enable verbose output in CLI" ON)
+option(LAB2_ENABLE_VERBOSE "Enable verbose output in CLI" OFF)
 option(LAB2_BUILD_SHARED_STATS "Build stats module as SHARED library" ON)
 option(LAB2_ENABLE_DEMO_SCALE "Scale demo sample values by 2" OFF)
 

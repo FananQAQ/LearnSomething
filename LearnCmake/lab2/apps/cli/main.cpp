@@ -18,6 +18,7 @@ int main() {
     std::cout << "raw text: \"" << raw << "\"\n";
     std::cout << "trimmed:    \"" << cleaned << "\"\n";
     std::cout << "word count: " << words << '\n';
+    std::cout << "upper: \"" << to_upper(cleaned) << "\"\n";
 
     std::vector<int> samples{2, 5, 9};
 #ifdef LAB2_ENABLE_DEMO_SCALE

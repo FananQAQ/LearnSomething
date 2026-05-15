@@ -1,0 +1,5 @@
+StringUtilsTest.Trim 1 0.0075346
+StringUtilsTest.SplitAndCount 1 0.0067169
+StatsTest.Summarize 1 0.0065889
+StatsTest.EmptyInput 1 0.0097336
+---

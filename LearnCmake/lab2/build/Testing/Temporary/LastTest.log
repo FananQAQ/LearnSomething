@@ -1,0 +1,111 @@
+Start testing: May 15 21:21 中国标准时间
+----------------------------------------------------------
+1/4 Testing: StringUtilsTest.Trim
+1/4 Test: StringUtilsTest.Trim
+Command: "D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_string.exe" "--gtest_filter=StringUtilsTest.Trim" "--gtest_also_run_disabled_tests"
+Directory: D:/LearnSomething/LearnCmake/lab2/build/tests
+"StringUtilsTest.Trim" start time: May 15 21:21 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from D:\LearnSomething\LearnCmake\lab2\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = StringUtilsTest.Trim
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StringUtilsTest
+[ RUN      ] StringUtilsTest.Trim
+[       OK ] StringUtilsTest.Trim (0 ms)
+[----------] 1 test from StringUtilsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StringUtilsTest.Trim" end time: May 15 21:21 中国标准时间
+"StringUtilsTest.Trim" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: StringUtilsTest.SplitAndCount
+2/4 Test: StringUtilsTest.SplitAndCount
+Command: "D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_string.exe" "--gtest_filter=StringUtilsTest.SplitAndCount" "--gtest_also_run_disabled_tests"
+Directory: D:/LearnSomething/LearnCmake/lab2/build/tests
+"StringUtilsTest.SplitAndCount" start time: May 15 21:21 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from D:\LearnSomething\LearnCmake\lab2\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = StringUtilsTest.SplitAndCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StringUtilsTest
+[ RUN      ] StringUtilsTest.SplitAndCount
+[       OK ] StringUtilsTest.SplitAndCount (0 ms)
+[----------] 1 test from StringUtilsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StringUtilsTest.SplitAndCount" end time: May 15 21:21 中国标准时间
+"StringUtilsTest.SplitAndCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: StatsTest.Summarize
+3/4 Test: StatsTest.Summarize
+Command: "D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_stats.exe" "--gtest_filter=StatsTest.Summarize" "--gtest_also_run_disabled_tests"
+Directory: D:/LearnSomething/LearnCmake/lab2/build/tests
+"StatsTest.Summarize" start time: May 15 21:21 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from D:\LearnSomething\LearnCmake\lab2\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = StatsTest.Summarize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTest
+[ RUN      ] StatsTest.Summarize
+[       OK ] StatsTest.Summarize (0 ms)
+[----------] 1 test from StatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTest.Summarize" end time: May 15 21:21 中国标准时间
+"StatsTest.Summarize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: StatsTest.EmptyInput
+4/4 Test: StatsTest.EmptyInput
+Command: "D:/LearnSomething/LearnCmake/lab2/build/tests/Debug/test_stats.exe" "--gtest_filter=StatsTest.EmptyInput" "--gtest_also_run_disabled_tests"
+Directory: D:/LearnSomething/LearnCmake/lab2/build/tests
+"StatsTest.EmptyInput" start time: May 15 21:21 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from D:\LearnSomething\LearnCmake\lab2\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = StatsTest.EmptyInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTest
+[ RUN      ] StatsTest.EmptyInput
+[       OK ] StatsTest.EmptyInput (0 ms)
+[----------] 1 test from StatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTest.EmptyInput" end time: May 15 21:21 中国标准时间
+"StatsTest.EmptyInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 15 21:21 中国标准时间

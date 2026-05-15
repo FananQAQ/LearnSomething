@@ -1,0 +1,5 @@
+add_test([=[StringUtilsTest.Trim]=]  D:/LearnSomething/LearnCmake/lab2/build_shared/tests/Debug/test_string.exe [==[--gtest_filter=StringUtilsTest.Trim]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StringUtilsTest.Trim]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab2\tests\test_string.cpp:5]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab2/build_shared/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[StringUtilsTest.SplitAndCount]=]  D:/LearnSomething/LearnCmake/lab2/build_shared/tests/Debug/test_string.exe [==[--gtest_filter=StringUtilsTest.SplitAndCount]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[StringUtilsTest.SplitAndCount]=]  PROPERTIES DEF_SOURCE_LINE [==[D:\LearnSomething\LearnCmake\lab2\tests\test_string.cpp:9]==] WORKING_DIRECTORY D:/LearnSomething/LearnCmake/lab2/build_shared/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_string_TESTS StringUtilsTest.Trim StringUtilsTest.SplitAndCount)

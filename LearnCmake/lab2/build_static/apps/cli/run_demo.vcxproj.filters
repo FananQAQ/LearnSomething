@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\LearnSomething\LearnCmake\lab2\build_static\CMakeFiles\b49347e6153d0f0941c6637120b82f3b\run_demo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\LearnSomething\LearnCmake\lab2\apps\cli\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\LearnSomething\LearnCmake\lab2\build_static\apps\cli\CMakeFiles\run_demo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F78D03F6-0399-3B30-9D60-E41C9FDC7E7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

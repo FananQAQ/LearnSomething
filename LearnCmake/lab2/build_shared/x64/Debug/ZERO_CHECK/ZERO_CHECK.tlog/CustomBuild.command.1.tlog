@@ -1,0 +1,10 @@
+^D:\LEARNSOMETHING\LEARNCMAKE\LAB2\BUILD_SHARED\CMAKEFILES\B83516CDA3E62C0F436825B7D99075F2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LearnSomething/LearnCmake/lab2 -BD:/LearnSomething/LearnCmake/lab2/build_shared --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/LearnSomething/LearnCmake/lab2/build_shared/lab2_cmake.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

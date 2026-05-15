@@ -108,12 +108,12 @@
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\LearnSomething\LearnCmake\lab2\lib\core;D:\LearnSomething\LearnCmake\lab2\build\include;D:\LearnSomething\LearnCmake\lab2\lib\config;D:\LearnSomething\LearnCmake\lab2\lib\stats;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -124,18 +124,6 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>Copy lab2_stats.dll next to lab2_cli for local runs</Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/LearnSomething/LearnCmake/lab2/build/lib/stats/Debug/lab2_stats.dll D:/LearnSomething/LearnCmake/lab2/build/apps/cli/Debug
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>..\..\lib\core\Debug\lab2_core.lib;..\..\lib\stats\Debug\lab2_stats.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -177,14 +165,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\LearnSomething\LearnCmake\lab2\lib\core;D:\LearnSomething\LearnCmake\lab2\build\include;D:\LearnSomething\LearnCmake\lab2\lib\config;D:\LearnSomething\LearnCmake\lab2\lib\stats;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -195,18 +183,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>Copy lab2_stats.dll next to lab2_cli for local runs</Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/LearnSomething/LearnCmake/lab2/build/lib/stats/Release/lab2_stats.dll D:/LearnSomething/LearnCmake/lab2/build/apps/cli/Release
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>..\..\lib\core\Release\lab2_core.lib;..\..\lib\stats\Release\lab2_stats.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -248,14 +224,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\LearnSomething\LearnCmake\lab2\lib\core;D:\LearnSomething\LearnCmake\lab2\build\include;D:\LearnSomething\LearnCmake\lab2\lib\config;D:\LearnSomething\LearnCmake\lab2\lib\stats;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -266,18 +242,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>Copy lab2_stats.dll next to lab2_cli for local runs</Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/LearnSomething/LearnCmake/lab2/build/lib/stats/MinSizeRel/lab2_stats.dll D:/LearnSomething/LearnCmake/lab2/build/apps/cli/MinSizeRel
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>..\..\lib\core\MinSizeRel\lab2_core.lib;..\..\lib\stats\MinSizeRel\lab2_stats.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -320,12 +284,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME="lab2_cli";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_VERBOSE=1;LAB2_STATS_SHARED;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LAB2_ENABLE_DEMO_SCALE=1;LAB2_APP_NAME=\"lab2_cli\";LAB2_DEFAULT_DELIMITER=',';CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\LearnSomething\LearnCmake\lab2\lib\core;D:\LearnSomething\LearnCmake\lab2\build\include;D:\LearnSomething\LearnCmake\lab2\lib\config;D:\LearnSomething\LearnCmake\lab2\lib\stats;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -336,18 +300,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message>Copy lab2_stats.dll next to lab2_cli for local runs</Message>
-      <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/LearnSomething/LearnCmake/lab2/build/lib/stats/RelWithDebInfo/lab2_stats.dll D:/LearnSomething/LearnCmake/lab2/build/apps/cli/RelWithDebInfo
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
       <AdditionalDependencies>..\..\lib\core\RelWithDebInfo\lab2_core.lib;..\..\lib\stats\RelWithDebInfo\lab2_stats.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
